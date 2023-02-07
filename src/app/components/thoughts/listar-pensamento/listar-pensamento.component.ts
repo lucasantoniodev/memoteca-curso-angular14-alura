@@ -18,6 +18,12 @@ export class ListarPensamentoComponent {
       autoria: 'Componente filho',
       modelo: 'modelo2',
     },
+    {
+      conteudo:
+        'MnFZFM62amdAtyIyGUTPW2TtBkU3qxtz8k2oVbAMao5xblgzyvm8ZxlPWAqOHeUtFG3OsDcC5GJyQvVWviRzaYjngslN35lS8TKqkAMuE2Eggwm1cmLv2poPpybS6NcrjyvXZpraQbceeRmFWhRYhKdzOgbsWYKXBnqHM3DZH1YKL78c7csDz5dx1OT85JCYKV3YoHVM95mpdQkmmHGn2ssld6SPn6c6O4InmWtgwPnxmnHgeAcMG0sD1DiYf6JT',
+      autoria: '256 Caracters',
+      modelo: 'modelo2',
+    },
   ];
   constructor() {}
 }

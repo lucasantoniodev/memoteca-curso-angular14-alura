@@ -12,4 +12,10 @@ export class ThoughtComponent {
     conteudo: '',
     modelo: '',
   };
+
+
+  larguraPensamento(): string {
+    if (this.pensamentoModel.conteudo.length >= 256) return 'pensamento-g';
+    return 'pensamento-p';
+  }
 }
