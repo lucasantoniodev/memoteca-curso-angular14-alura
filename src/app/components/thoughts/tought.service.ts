@@ -1,6 +1,7 @@
 import { Pensamento } from './models/Thought';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
@@ -15,5 +16,15 @@ export class ToughtService {
 
   listar() {
     return this.http.get<Pensamento[]>(this.API);
+  }
+
+  excluir(id: number): Observable<Pensamento> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Pensamento>(url);
+  }
+
+  buscarPorId(id: number): Observable<Pensamento> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Pensamento>(url);
   }
 }

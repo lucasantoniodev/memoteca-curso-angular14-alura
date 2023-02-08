@@ -10,6 +10,7 @@ import { CriarPensamentoComponent } from './components/thoughts/criar-pensamento
 import { ListarPensamentoComponent } from './components/thoughts/listar-pensamento/listar-pensamento.component';
 import { ThoughtComponent } from './components/thoughts/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExcluirPensamentoComponent } from './components/thoughts/excluir-pensamento/excluir-pensamento.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     CriarPensamentoComponent,
     ListarPensamentoComponent,
     ThoughtComponent,
+    ExcluirPensamentoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
