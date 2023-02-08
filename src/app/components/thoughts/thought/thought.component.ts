@@ -8,11 +8,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ThoughtComponent {
   @Input() pensamentoModel: Pensamento = {
+    id: 0,
     autoria: '',
     conteudo: '',
     modelo: '',
   };
-
 
   larguraPensamento(): string {
     if (this.pensamentoModel.conteudo.length >= 256) return 'pensamento-g';
